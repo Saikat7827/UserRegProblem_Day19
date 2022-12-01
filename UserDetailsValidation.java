@@ -4,10 +4,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserDetailsValidation {
-    public static void isValidFirstName(String firstName) {
+    public static void isValidLastName(String lastName) {
         String regex = "^[A-Z][a-z]{2,}$";
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(firstName);
+        Matcher matcher = pattern.matcher(lastName);
         if (matcher.matches()) {
             System.out.println("Valid");
         } else {
