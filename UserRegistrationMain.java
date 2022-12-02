@@ -3,17 +3,16 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class UserRegistrationMain extends UserDetailsValidation {
-    static Scanner scanner = new Scanner(System.in);
-    static String email;
+    static Scanner scanner = new Scanner(System.in);static String mobileNumber;
 
     public static void main(String[] args) {
         System.out.println("Welcome to User Registration Problem");
-        userEmail();
+        userMobileNumber();
     }
-        public static void userEmail () {
-            System.out.println("Enter your Email");
-            email = scanner.next();
-            UserDetailsValidation.isValidEmail(email);
-        }
+    public static void userMobileNumber() {
+        System.out.println("Enter your mobile Number");
+        mobileNumber = scanner.nextLine();
+        UserDetailsValidation.isValidMobileNumber(mobileNumber);
+    }
     }
 

@@ -4,11 +4,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserDetailsValidation {
-    public static void isValidEmail(String email) {
-
-         String regex = "([a-z]{3,})(.)([a-z]{3,})[@][a-z]{2}(.)([a-z]{2})(.)([a-z]{2})";
+    public static void isValidMobileNumber(String mobileNumber) {
+       // String regex = "^[91]+[ ]?[6-9]{1}[0-9]{9}$";
+        String regex = "[9][1][0-9]{10}";
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(email);
+        Matcher matcher = pattern.matcher(mobileNumber);
         if (matcher.matches()) {
             System.out.println("Valid");
         } else {
