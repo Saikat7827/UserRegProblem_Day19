@@ -8,7 +8,7 @@ public class UserDetailsValidation {
     public static void isValidAllEmail() {
         ArrayList<String> email = new ArrayList<String>();
         // Valid emails
-        email.add("rutuja@gmail.com");
+        email.add("saikat@gmail.com");
         email.add("abc@yahoo.com");
         email.add("abc-100@yahoo.com");
         email.add("abc.566@yahoo.com");
